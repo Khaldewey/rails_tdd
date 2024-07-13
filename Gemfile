@@ -15,7 +15,7 @@ gem 'httparty'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.2.0'
 
-gem 'rails-i18n'
+# gem 'rails-i18n', '~> 5.1', '>= 5.1.3'
 
 # Use SCSS for stylesheets
 gem 'sassc-rails'
@@ -92,6 +92,9 @@ group :development do
   gem 'meta_request'
   gem 'dedent'
   gem 'bullet'
+  gem 'guard'
+  gem 'guard-minitest'
+  gem 'terminal-notifier-guard'
 end
 #
 gem 'bootstrap-sass'
