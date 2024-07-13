@@ -6,7 +6,8 @@ class UserTest < ActiveSupport::TestCase
     assert true, message: "deveria ser verdadeiro"
   end 
 
-  test "a soma de dois valores" do
-    assert_equal 4 , 3+4
+  test "user should respond to name" do
+    user = User.new
+    assert_respond_to user, :name
   end
 end
