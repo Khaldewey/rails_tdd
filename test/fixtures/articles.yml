@@ -1,9 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  content: MyString
-
+  title: My first post
+  content: Some content
 two:
-  title: MyString
-  content: MyString
+  title: Second Post
+  content: Some content
+
+
+<% 1000.times do |n| %>
+post<%= n %>:
+  title: "My title <%=n%>"
+  content: "My content <%=n%>"
+<% end %>
