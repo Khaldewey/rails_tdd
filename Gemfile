@@ -15,6 +15,10 @@ gem 'httparty'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.2.0'
 
+gem 'turbolinks', '~> 5' 
+
+gem 'wdm', '>= 0.1.0'
+
 # gem 'rails-i18n', '~> 5.1', '>= 5.1.3'
 
 # Use SCSS for stylesheets
