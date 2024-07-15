@@ -54,5 +54,12 @@ class ArticlesControllerTest < ActionDispatch::IntegrationTest
    assert_recognizes( {controller: "articles", action: "create"}, {path: "articles", method: :post})
    assert_recognizes( {controller: "articles", action: "index"}, 'articles')
    assert_recognizes( {controller: "articles", action: "destroy", id: "5"}, {path: "articles/5", method: :delete})
+  end 
+
+  test "should list all recorded articles" do
+    get '/'
+    assert_select 'table td' do |elements|
+     assert elements.count >= 1000
+    end
   end
 end

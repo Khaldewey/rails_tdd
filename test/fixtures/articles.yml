@@ -7,7 +7,9 @@ two:
   title: Second Post
   content: Some content
 
-
+uncap: 
+ title: Uncapitalized Post
+ content: Some content
 <% 1000.times do |n| %>
 post<%= n %>:
   title: "My title <%=n%>"
