@@ -99,7 +99,7 @@ group :development do
   gem 'guard'
   gem 'guard-minitest'
   gem 'terminal-notifier-guard'
-   gem 'rspec-rails', '~> 5.0'
+  gem 'rspec-rails', '~> 5.0'
 end 
 
 group :test do
