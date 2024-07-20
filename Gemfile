@@ -99,6 +99,7 @@ group :development do
   gem 'guard'
   gem 'guard-minitest'
   gem 'terminal-notifier-guard'
+   gem 'rspec-rails', '~> 5.0'
 end 
 
 group :test do
@@ -110,3 +111,5 @@ gem 'bootstrap-sass'
 gem 'momentjs-rails'
 gem 'bootstrap3-datetimepicker-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
+
+
