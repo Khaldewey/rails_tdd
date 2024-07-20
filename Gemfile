@@ -113,3 +113,7 @@ gem 'bootstrap3-datetimepicker-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 
 
+
+gem "simplecov", "~> 0.18.5", :group => :test, :require => false
+
+gem "simplecov_json_formatter", "~> 0.1.4", :group => :test, :require => false
