@@ -17,7 +17,7 @@ gem 'rails', '5.2.0'
 
 gem 'turbolinks', '~> 5' 
 
-gem 'wdm', '>= 0.1.0'
+# gem 'wdm', '>= 0.1.0'
 
 # gem 'rails-i18n', '~> 5.1', '>= 5.1.3'
 
