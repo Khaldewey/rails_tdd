@@ -17,8 +17,6 @@ gem 'rails', '5.2.0'
 
 gem 'turbolinks', '~> 5' 
 
-gem 'wdm', '>= 0.1.0' 
-
 # gem 'rails-i18n', '~> 5.1', '>= 5.1.3'
 
 # Use SCSS for stylesheets
@@ -99,7 +97,8 @@ group :development do
   gem 'guard'
   gem 'guard-minitest'
   gem 'terminal-notifier-guard'
-  gem 'rspec-rails', '~> 5.0'
+  gem 'rspec-rails', '~> 5.0' 
+  gem 'listen', '~> 3.0'
 end 
 
 group :test do
