@@ -39,20 +39,26 @@ jobs:
           ruby-version: 2.4.4
           bundler-cache: true
 
+      - name: Update RubyGems
+        run: gem update --system 3.2.3
+
       - name: Install dependencies
         run: |
           sudo apt-get update && sudo apt-get -yqq install libpq-dev
           bundle install --jobs 4 --retry 3
+
+      - name: Copy database config
+        run: cp config/database.ci.yml config/database.yml
+
+      - name: Set up the database
+        run: bundle exec rails db:schema:load
 
       - name: Run tests
         env:
           RAILS_ENV: test
           PGHOST: localhost
           DISABLE_SPRING: 1
-        run: |
-          cp config/database.ci.yml config/database.yml
-          bundle exec rails db:schema:load
-          bundle exec rspec --format progress
+        run: bundle exec rspec --format progress
 
       - name: Publish code coverage
         uses: paambaati/codeclimate-action@v3.0.0
