@@ -42,10 +42,13 @@ jobs:
       - name: Update RubyGems
         run: gem update --system 3.2.3
 
+      - name: Install Bundler
+        run: gem install bundler -v 1.17.3
+
       - name: Install dependencies
         run: |
           sudo apt-get update && sudo apt-get -yqq install libpq-dev
-          bundle install --jobs 4 --retry 3
+          bundle _1.17.3_ install --jobs 4 --retry 3
 
       - name: Copy database config
         run: cp config/database.ci.yml config/database.yml
