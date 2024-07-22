@@ -14,7 +14,7 @@ env:
 jobs:
   test:
     name: Test
-    environment: blogstrap
+    environment: rails_tdd
     runs-on: ubuntu-latest
 
     services:
